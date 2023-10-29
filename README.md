@@ -2,11 +2,11 @@
 
 ## How to run it
 
-###Linux
+### Linux
 - In order to build the project go to root folder and run `./gradlew` , after that it should be ready to run
 - To run it either <b>Run the Menu from the IDE</b> or try with `./gradlew run` ,but personally I was not able to do it since I am using Ubuntu and it seemingly has some issues with running processing sketches
 
-###Windows
+### Windows
 - To build, run `gradlew` , after that the project is built
 - To run the project You can, again, either <b>Run the Menu from the IDE</b> or run `gradlew run` from the command line (which will work this time actually)
 
