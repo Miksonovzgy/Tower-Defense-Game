@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.TetrisTestSuite3_1" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-FBIJT05" time="0.0">
+  <properties/>
+  <system-out><![CDATA[You got 22/22 points!
+You pass assignment 3.1!]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

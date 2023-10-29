@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.FullGameTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-10-01T17:07:44" hostname="DESKTOP-FBIJT05" time="0.312">
+  <properties/>
+  <testcase name="testGame5x9" classname="tetris.FullGameTests" time="0.036"/>
+  <testcase name="testGame8x11" classname="tetris.FullGameTests" time="0.121"/>
+  <testcase name="testGame6x10" classname="tetris.FullGameTests" time="0.034"/>
+  <testcase name="testInterleave5x9and8x11" classname="tetris.FullGameTests" time="0.027"/>
+  <testcase name="testInterleave8x11and6x10" classname="tetris.FullGameTests" time="0.092"/>
+  <system-out><![CDATA[CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

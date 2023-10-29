@@ -1,0 +1,7937 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class tetris.FullGameTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class tetris.FullGameTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/tetris.html">tetris</a> &gt; FullGameTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">5</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.161s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testGame5x9"></a>
+<h3 class="failures">testGame5x9</h3>
+<span class="code">
+<pre>org.scalatest.exceptions.TestFailedException: didPass was false
+--------------------------------------------------------------------------------
+This is what went wrong:
+
+step=0, rand=0, actions=&lt;&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+.IIII | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+
+step=1, rand=0, actions=&lt;RotateRight&gt;
+Want  | Got ✗
+-------------
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+
+step=2, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+
+step=3, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+
+step=4, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+..... | IIIII
+..... | IIIII
+
+step=5, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+..... | IIIII
+
+step=6, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+
+step=7, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+.IIII | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+
+step=8, rand=0, actions=&lt;RotateRight&gt;
+Want  | Got ✗
+-------------
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+..... | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+
+step=9, rand=0, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+..I.. | IIIII
+..I.. | IIIII
+..I.. | IIIII
+..I.. | IIIII
+..... | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+
+step=10, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..I.. | IIIII
+..I.. | IIIII
+..I.. | IIIII
+..I.. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+
+step=11, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..I.. | IIIII
+..I.. | IIIII
+..I.. | IIIII
+..II. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+
+step=12, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..I.. | IIIII
+..I.. | IIIII
+..II. | IIIII
+..II. | IIIII
+...I. | IIIII
+...I. | IIIII
+
+step=13, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..I.. | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+...I. | IIIII
+
+step=14, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+
+step=15, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..OO. | IIIII
+..OO. | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+
+step=16, rand=3, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+.OO.. | IIIII
+.OO.. | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+
+step=17, rand=3, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+OO... | IIIII
+OO... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+
+step=18, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+OO... | IIIII
+OO... | IIIII
+..... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+
+step=19, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+OO... | IIIII
+OO... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+
+step=20, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+OO... | IIIII
+OO... | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+
+step=21, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+OO... | IIIII
+OOII. | IIIII
+..II. | IIIII
+..II. | IIIII
+..II. | IIIII
+
+step=22, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+OOII. | IIIII
+OOII. | IIIII
+..II. | IIIII
+..II. | IIIII
+
+step=23, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+..II. | IIIII
+
+step=24, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=25, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+.IIII | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=26, rand=0, actions=&lt;RotateRight&gt;
+Want  | Got ✗
+-------------
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+...I. | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=27, rand=0, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+..I.. | IIIII
+..I.. | IIIII
+..I.. | IIIII
+..I.. | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=28, rand=0, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+.I... | IIIII
+.I... | IIIII
+.I... | IIIII
+.I... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=29, rand=0, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+I.... | IIIII
+I.... | IIIII
+I.... | IIIII
+I.... | IIIII
+..... | IIIII
+..II. | IIIII
+..II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=30, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+I.... | IIIII
+I.... | IIIII
+I.... | IIIII
+I.... | IIIII
+..II. | IIIII
+..II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=31, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+I.... | IIIII
+I.... | IIIII
+I.... | IIIII
+I.II. | IIIII
+..II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=32, rand=0, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+I.... | IIIII
+I.... | IIIII
+I.II. | IIIII
+I.II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=33, rand=1, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+.J... | IIIII
+.JJJ. | IIIII
+..... | IIIII
+I.... | IIIII
+I.... | IIIII
+I.II. | IIIII
+I.II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=34, rand=1, actions=&lt;RotateRight&gt;
+Want  | Got ✗
+-------------
+..JJ. | IIIII
+..J.. | IIIII
+..J.. | IIIII
+I.... | IIIII
+I.... | IIIII
+I.II. | IIIII
+I.II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=35, rand=1, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+.JJ.. | IIIII
+.J... | IIIII
+.J... | IIIII
+I.... | IIIII
+I.... | IIIII
+I.II. | IIIII
+I.II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=36, rand=1, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+.JJ.. | IIIII
+.J... | IIIII
+IJ... | IIIII
+I.... | IIIII
+I.II. | IIIII
+I.II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=37, rand=1, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+.JJ.. | IIIII
+IJ... | IIIII
+IJ... | IIIII
+I.II. | IIIII
+I.II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=38, rand=1, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+IJJ.. | IIIII
+IJ... | IIIII
+IJII. | IIIII
+I.II. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=39, rand=1, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+I.... | IIIII
+IJJ.. | IIIII
+IJII. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=40, rand=4, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..SS. | IIIII
+.SS.. | IIIII
+..... | IIIII
+I.... | IIIII
+IJJ.. | IIIII
+IJII. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=41, rand=4, actions=&lt;RotateRight&gt;
+Want  | Got ✗
+-------------
+..S.. | IIIII
+..SS. | IIIII
+...S. | IIIII
+I.... | IIIII
+IJJ.. | IIIII
+IJII. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=42, rand=4, actions=&lt;Right&gt;
+Want  | Got ✗
+-------------
+...S. | IIIII
+...SS | IIIII
+....S | IIIII
+I.... | IIIII
+IJJ.. | IIIII
+IJII. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=43, rand=4, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+...S. | IIIII
+...SS | IIIII
+I...S | IIIII
+IJJ.. | IIIII
+IJII. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=44, rand=4, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+...S. | IIIII
+I..SS | IIIII
+IJJ.S | IIIII
+IJII. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=45, rand=4, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+I..S. | IIIII
+IJJSS | IIIII
+IJIIS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=46, rand=2, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+...L. | IIIII
+.LLL. | IIIII
+..... | IIIII
+..... | IIIII
+..... | IIIII
+I..S. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=47, rand=2, actions=&lt;RotateRight&gt;
+Want  | Got ✗
+-------------
+..L.. | IIIII
+..L.. | IIIII
+..LL. | IIIII
+..... | IIIII
+..... | IIIII
+I..S. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=48, rand=2, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+.L... | IIIII
+.L... | IIIII
+.LL.. | IIIII
+..... | IIIII
+..... | IIIII
+I..S. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=49, rand=2, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+.L... | IIIII
+.L... | IIIII
+.LL.. | IIIII
+..... | IIIII
+I..S. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=50, rand=2, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+.L... | IIIII
+.L... | IIIII
+.LL.. | IIIII
+I..S. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=51, rand=2, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+..... | IIIII
+.L... | IIIII
+.L... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=52, rand=1, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+.J... | IIIII
+.JJJ. | IIIII
+..... | IIIII
+.L... | IIIII
+.L... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=53, rand=1, actions=&lt;RotateRight&gt;
+Want  | Got ✗
+-------------
+..JJ. | IIIII
+..J.. | IIIII
+..J.. | IIIII
+.L... | IIIII
+.L... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=54, rand=1, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+.JJ.. | IIIII
+.J... | IIIII
+.J... | IIIII
+.L... | IIIII
+.L... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=55, rand=1, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+JJ... | IIIII
+J.... | IIIII
+J.... | IIIII
+.L... | IIIII
+.L... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=56, rand=1, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+JJ... | IIIII
+J.... | IIIII
+JL... | IIIII
+.L... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=57, rand=1, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+JJ... | IIIII
+JL... | IIIII
+JL... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=58, rand=4, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..SS. | IIIII
+.SS.. | IIIII
+JJ... | IIIII
+JL... | IIIII
+JL... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=59, rand=4, actions=&lt;Right&gt;
+Want  | Got ✗
+-------------
+...SS | IIIII
+..SS. | IIIII
+JJ... | IIIII
+JL... | IIIII
+JL... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=60, rand=4, actions=&lt;RotateRight&gt;
+Want  | Got ✗
+-------------
+...S. | IIIII
+...SS | IIIII
+JJ..S | IIIII
+JL... | IIIII
+JL... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=61, rand=4, actions=&lt;Right&gt;
+Want  | Got ✗
+-------------
+...S. | IIIII
+...SS | IIIII
+JJ..S | IIIII
+JL... | IIIII
+JL... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=62, rand=4, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+...S. | IIIII
+JJ.SS | IIIII
+JL..S | IIIII
+JL... | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=63, rand=4, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+JJ.S. | IIIII
+JL.SS | IIIII
+JL..S | IIIII
+ILLS. | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=64, rand=4, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+JJ... | IIIII
+JL.S. | IIIII
+JL.SS | IIIII
+ILLSS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=65, rand=6, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+.ZZ.. | IIIII
+..ZZ. | IIIII
+..... | IIIII
+JJ... | IIIII
+JL.S. | IIIII
+JL.SS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=66, rand=6, actions=&lt;Right&gt;
+Want  | Got ✗
+-------------
+..ZZ. | IIIII
+...ZZ | IIIII
+..... | IIIII
+JJ... | IIIII
+JL.S. | IIIII
+JL.SS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=67, rand=6, actions=&lt;RotateRight&gt;
+Want  | Got ✗
+-------------
+....Z | IIIII
+...ZZ | IIIII
+...Z. | IIIII
+JJ... | IIIII
+JL.S. | IIIII
+JL.SS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=68, rand=6, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+...Z. | IIIII
+..ZZ. | IIIII
+..Z.. | IIIII
+JJ... | IIIII
+JL.S. | IIIII
+JL.SS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=69, rand=6, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+...Z. | IIIII
+..ZZ. | IIIII
+JJZ.. | IIIII
+JL.S. | IIIII
+JL.SS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=70, rand=6, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+..... | IIIII
+...Z. | IIIII
+JJZZ. | IIIII
+JLZS. | IIIII
+JL.SS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=71, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..OO. | IIIII
+..OO. | IIIII
+...Z. | IIIII
+JJZZ. | IIIII
+JLZS. | IIIII
+JL.SS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=72, rand=3, actions=&lt;Left&gt;
+Want  | Got ✗
+-------------
+.OO.. | IIIII
+.OO.. | IIIII
+...Z. | IIIII
+JJZZ. | IIIII
+JLZS. | IIIII
+JL.SS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=73, rand=3, actions=&lt;Down&gt;
+Want  | Got ✗
+-------------
+..... | IIIII
+.OO.. | IIIII
+.OOZ. | IIIII
+JJZZ. | IIIII
+JLZS. | IIIII
+JL.SS | IIIII
+IJII. | IIIII
+OOII. | IIIII
+OOII. | IIIII
+
+step=74, rand=1, actions=&lt;Down&gt;
+Want              | Got ✗
+-------------------------
+GameOverDisplay() | IIIII
+                  | IIIII
+                  | IIIII
+                  | IIIII
+                  | IIIII
+                  | IIIII
+                  | IIIII
+                  | IIIII
+                  | IIIII
+
+
+	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
+	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
+	at app//org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
+	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:503)
+	at app//generic.GameTestSuite.checkGame(GameTestSuite.scala:298)
+	at app//tetris.TetrisTestSuiteBase.checkGame(TetrisTestSuiteBase.scala:103)
+	at app//tetris.FullGameTests.$anonfun$new$1(FullGameTests.scala:5740)
+	at app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at app//infrastructure.TestBase.$anonfun$test$1(TestBase.scala:36)
+	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
+	at app//org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at app//infrastructure.TestBase.org$scalatest$concurrent$TimeLimitedTests$$super$withFixture(TestBase.scala:9)
+	at app//org.scalatest.concurrent.TimeLimitedTests.$anonfun$withFixture$3(TimeLimitedTests.scala:154)
+	at app//org.scalatest.enablers.Timed$$anon$1.timeoutAfter(Timed.scala:127)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl(TimeLimits.scala:239)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl$(TimeLimits.scala:233)
+	at app//org.scalatest.concurrent.TimeLimits$.failAfterImpl(TimeLimits.scala:305)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture(TimeLimitedTests.scala:153)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture$(TimeLimitedTests.scala:150)
+	at app//infrastructure.TestBase.withFixture(TestBase.scala:9)
+	at app//org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at app//org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+	at app//org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+	at app//org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at app//scala.collection.immutable.List.foreach(List.scala:333)
+	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at app//org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+	at app//org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+	at app//org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+	at app//org.scalatest.Suite.run(Suite.scala:1124)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at app//org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+	at app//org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+	at app//infrastructure.TestBase.run(TestBase.scala:26)
+	at app//org.scalatest.Suite.callExecuteOnSuite$1(Suite.scala:1187)
+	at app//org.scalatest.Suite.$anonfun$runNestedSuites$1(Suite.scala:1234)
+	at app//scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1323)
+	at app//org.scalatest.Suite.runNestedSuites(Suite.scala:1232)
+	at app//org.scalatest.Suite.runNestedSuites$(Suite.scala:1166)
+	at app//org.scalatest.Suites.runNestedSuites(Suites.scala:56)
+	at app//org.scalatest.Suite.run(Suite.scala:1121)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//tetris.TetrisTestSuitesBase.runDirect(TetrisTestSuitesBase.scala:20)
+	at app//tetris.TetrisTestSuitesBase.runWithScoreCounter(TetrisTestSuitesBase.scala:14)
+	at app//tetris.TetrisTestSuite3_2.run(TetrisTestSuite3_2.scala:25)
+	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at app//org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at app//org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.18/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.18/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testGame6x10"></a>
+<h3 class="failures">testGame6x10</h3>
+<span class="code">
+<pre>org.scalatest.exceptions.TestFailedException: didPass was false
+--------------------------------------------------------------------------------
+This is what went wrong:
+
+step=0, rand=1, actions=&lt;&gt;
+Want   | Got ✗ 
+---------------
+.J.... | IIIIII
+.JJJ.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=1, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..JJ.. | IIIIII
+..J... | IIIIII
+..J... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=2, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+.JJJ.. | IIIIII
+...J.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=3, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..J... | IIIIII
+..J... | IIIIII
+.JJ... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=4, rand=1, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+...J.. | IIIIII
+...J.. | IIIIII
+..JJ.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=5, rand=1, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=6, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=7, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=8, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=9, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=10, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+...... | IIIIII
+...... | IIIIII
+
+step=11, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+...... | IIIIII
+
+step=12, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=13, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+..SS.. | IIIIII
+.SS... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=14, rand=4, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+...SS. | IIIIII
+..SS.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=15, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...SS. | IIIIII
+..SS.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=16, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...SS. | IIIIII
+..SS.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=17, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...SS. | IIIIII
+..SS.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=18, rand=4, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..SS.. | IIIIII
+.SS... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=19, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..SS.. | IIIIII
+.SS... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=20, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..SS.. | IIIIII
+.SS... | IIIIII
+....J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=21, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..SS.. | IIIIII
+.SS.J. | IIIIII
+....J. | IIIIII
+...JJ. | IIIIII
+
+step=22, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..SSJ. | IIIIII
+.SS.J. | IIIIII
+...JJ. | IIIIII
+
+step=23, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=24, rand=4, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=25, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+.J.... | IIIIII
+.JJJ.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=26, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..JJ.. | IIIIII
+..J... | IIIIII
+..J... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=27, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+.JJJ.. | IIIIII
+...J.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=28, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..J... | IIIIII
+..J... | IIIIII
+.JJ... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=29, rand=1, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+...J.. | IIIIII
+...J.. | IIIIII
+..JJ.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=30, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...J.. | IIIIII
+...J.. | IIIIII
+..JJ.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=31, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...J.. | IIIIII
+...J.. | IIIIII
+..JJ.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=32, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...J.. | IIIIII
+...J.. | IIIIII
+..JJ.. | IIIIII
+...... | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=33, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...J.. | IIIIII
+...J.. | IIIIII
+..JJ.. | IIIIII
+....J. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=34, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...J.. | IIIIII
+...J.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=35, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+.J.... | IIIIII
+.JJJ.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...J.. | IIIIII
+...J.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=36, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..JJ.. | IIIIII
+..J... | IIIIII
+..J... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...J.. | IIIIII
+...J.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=37, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+..JJ.. | IIIIII
+..J... | IIIIII
+..J... | IIIIII
+...... | IIIIII
+...J.. | IIIIII
+...J.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=38, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..J... | IIIIII
+..J... | IIIIII
+...J.. | IIIIII
+...J.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=39, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..J... | IIIIII
+..JJ.. | IIIIII
+...J.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=40, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=41, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+..T... | IIIIII
+.TTT.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=42, rand=5, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..T... | IIIIII
+..TT.. | IIIIII
+..T... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=43, rand=5, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+.T.... | IIIIII
+.TT... | IIIIII
+.T.... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=44, rand=5, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+T..... | IIIIII
+TT.... | IIIIII
+T..... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=45, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+T..... | IIIIII
+TT.... | IIIIII
+T..... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=46, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+T..... | IIIIII
+TT.... | IIIIII
+T.JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=47, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+T..... | IIIIII
+TTJJ.. | IIIIII
+T.JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=48, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+T.JJ.. | IIIIII
+TTJJ.. | IIIIII
+T.JJ.. | IIIIII
+..JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=49, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+T.JJ.. | IIIIII
+TTJJ.. | IIIIII
+T.JJJ. | IIIIII
+..SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=50, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJ.. | IIIIII
+TTJJJ. | IIIIII
+T.SSJ. | IIIIII
+.SSJJ. | IIIIII
+
+step=51, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=52, rand=5, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=53, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+..OO.. | IIIIII
+..OO.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=54, rand=3, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+.OO... | IIIIII
+.OO... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=55, rand=3, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+OO.... | IIIIII
+OO.... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=56, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+OO.... | IIIIII
+OO.... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=57, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+OO.... | IIIIII
+OO.... | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=58, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+OO.... | IIIIII
+OOJJ.. | IIIIII
+..JJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=59, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+..JJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=60, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=61, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+.J.... | IIIIII
+.JJJ.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=62, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..JJ.. | IIIIII
+..J... | IIIIII
+..J... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=63, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+.JJJ.. | IIIIII
+...J.. | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=64, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..J... | IIIIII
+..J... | IIIIII
+.JJ... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=65, rand=1, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+.J.... | IIIIII
+.J.... | IIIIII
+JJ.... | IIIIII
+...... | IIIIII
+..JJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=66, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+.J.... | IIIIII
+.J.... | IIIIII
+JJ.... | IIIIII
+..JJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=67, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.... | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=68, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+.J.... | IIIIII
+.JJJ.. | IIIIII
+.J.... | IIIIII
+.J.... | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=69, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..JJ.. | IIIIII
+..J... | IIIIII
+.JJ... | IIIIII
+.J.... | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=70, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+.JJJ.. | IIIIII
+.J.J.. | IIIIII
+.J.... | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=71, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+.JJJ.. | IIIIII
+.J.J.. | IIIIII
+.J.... | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=72, rand=1, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+..JJJ. | IIIIII
+.J..J. | IIIIII
+.J.... | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=73, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...J.. | IIIIII
+...J.. | IIIIII
+.JJJ.. | IIIIII
+.J.... | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=74, rand=1, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+....J. | IIIIII
+....J. | IIIIII
+.J.JJ. | IIIIII
+.J.... | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=75, rand=1, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+.....J | IIIIII
+.....J | IIIIII
+.J..JJ | IIIIII
+.J.... | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=76, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+.....J | IIIIII
+.J...J | IIIIII
+.J..JJ | IIIIII
+JJJJ.. | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=77, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+.J...J | IIIIII
+.J...J | IIIIII
+JJJJJJ | IIIIII
+OOJJ.. | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=78, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J...J | IIIIII
+JJJJ.J | IIIIII
+OOJJJJ | IIIIII
+OOJJ.. | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=79, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.... | IIIIII
+JJJJ.J | IIIIII
+OOJJ.J | IIIIII
+OOJJJJ | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=80, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+..T... | IIIIII
+.TTT.. | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.... | IIIIII
+JJJJ.J | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=81, rand=5, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+...T.. | IIIIII
+..TTT. | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.... | IIIIII
+JJJJ.J | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=82, rand=5, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...T.. | IIIIII
+...TT. | IIIIII
+...T.. | IIIIII
+.J.... | IIIIII
+.J.... | IIIIII
+JJJJ.J | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=83, rand=5, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+..TTT. | IIIIII
+...T.. | IIIIII
+.J.... | IIIIII
+.J.... | IIIIII
+JJJJ.J | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=84, rand=5, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...TTT | IIIIII
+....T. | IIIIII
+.J.... | IIIIII
+.J.... | IIIIII
+JJJJ.J | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=85, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...TTT | IIIIII
+.J..T. | IIIIII
+.J.... | IIIIII
+JJJJ.J | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=86, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+.J.TTT | IIIIII
+.J..T. | IIIIII
+JJJJ.J | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=87, rand=5, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.TTT | IIIIII
+JJJJTJ | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=88, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+..OO.. | IIIIII
+..OO.. | IIIIII
+...... | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=89, rand=3, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+...OO. | IIIIII
+...OO. | IIIIII
+...... | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=90, rand=3, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+....OO | IIIIII
+....OO | IIIIII
+...... | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=91, rand=3, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+...OO. | IIIIII
+...OO. | IIIIII
+...... | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=92, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...OO. | IIIIII
+...OO. | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=93, rand=3, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+....OO | IIIIII
+....OO | IIIIII
+...... | IIIIII
+.J.... | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=94, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+....OO | IIIIII
+....OO | IIIIII
+.J.... | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=95, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+...... | IIIIII
+....OO | IIIIII
+.J..OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=96, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+..SS.. | IIIIII
+.SS... | IIIIII
+...... | IIIIII
+....OO | IIIIII
+.J..OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=97, rand=4, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+..S... | IIIIII
+..SS.. | IIIIII
+...S.. | IIIIII
+....OO | IIIIII
+.J..OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=98, rand=4, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+.S.... | IIIIII
+.SS... | IIIIII
+..S... | IIIIII
+....OO | IIIIII
+.J..OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=99, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+.S.... | IIIIII
+.SS... | IIIIII
+..S.OO | IIIIII
+.J..OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=100, rand=4, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+.S.... | IIIIII
+.SS.OO | IIIIII
+.JS.OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=101, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+.J.... | IIIIII
+.JJJ.. | IIIIII
+.S.... | IIIIII
+.SS.OO | IIIIII
+.JS.OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=102, rand=1, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+..J... | IIIIII
+..JJJ. | IIIIII
+.S.... | IIIIII
+.SS.OO | IIIIII
+.JS.OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=103, rand=1, actions=&lt;RotateRight&gt;
+Want   | Got ✗ 
+---------------
+...JJ. | IIIIII
+...J.. | IIIIII
+.S.J.. | IIIIII
+.SS.OO | IIIIII
+.JS.OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=104, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...JJ. | IIIIII
+.S.J.. | IIIIII
+.SSJOO | IIIIII
+.JS.OO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=105, rand=1, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+...... | IIIIII
+...... | IIIIII
+.S.JJ. | IIIIII
+.SSJOO | IIIIII
+.JSJOO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=106, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+..OO.. | IIIIII
+..OO.. | IIIIII
+.S.JJ. | IIIIII
+.SSJOO | IIIIII
+.JSJOO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=107, rand=3, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+...OO. | IIIIII
+...OO. | IIIIII
+.S.JJ. | IIIIII
+.SSJOO | IIIIII
+.JSJOO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=108, rand=3, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+....OO | IIIIII
+....OO | IIIIII
+.S.JJ. | IIIIII
+.SSJOO | IIIIII
+.JSJOO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=109, rand=3, actions=&lt;Right&gt;
+Want   | Got ✗ 
+---------------
+....OO | IIIIII
+....OO | IIIIII
+.S.JJ. | IIIIII
+.SSJOO | IIIIII
+.JSJOO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=110, rand=3, actions=&lt;Down&gt;
+Want   | Got ✗ 
+---------------
+..OOOO | IIIIII
+..OOOO | IIIIII
+.S.JJ. | IIIIII
+.SSJOO | IIIIII
+.JSJOO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=111, rand=3, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+.OO.OO | IIIIII
+.OO.OO | IIIIII
+.S.JJ. | IIIIII
+.SSJOO | IIIIII
+.JSJOO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=112, rand=3, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+OO..OO | IIIIII
+OO..OO | IIIIII
+.S.JJ. | IIIIII
+.SSJOO | IIIIII
+.JSJOO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=113, rand=3, actions=&lt;Left&gt;
+Want   | Got ✗ 
+---------------
+OO..OO | IIIIII
+OO..OO | IIIIII
+.S.JJ. | IIIIII
+.SSJOO | IIIIII
+.JSJOO | IIIIII
+.J.TTT | IIIIII
+OOJJ.J | IIIIII
+T.JJJ. | IIIIII
+TTSSJ. | IIIIII
+TSSJJ. | IIIIII
+
+step=114, rand=5, actions=&lt;Down&gt;
+Want              | Got ✗ 
+--------------------------
+GameOverDisplay() | IIIIII
+                  | IIIIII
+                  | IIIIII
+                  | IIIIII
+                  | IIIIII
+                  | IIIIII
+                  | IIIIII
+                  | IIIIII
+                  | IIIIII
+                  | IIIIII
+
+
+	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
+	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
+	at app//org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
+	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:503)
+	at app//generic.GameTestSuite.checkGame(GameTestSuite.scala:298)
+	at app//tetris.TetrisTestSuiteBase.checkGame(TetrisTestSuiteBase.scala:103)
+	at app//tetris.FullGameTests.$anonfun$new$3(FullGameTests.scala:5748)
+	at app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at app//infrastructure.TestBase.$anonfun$test$1(TestBase.scala:36)
+	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
+	at app//org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at app//infrastructure.TestBase.org$scalatest$concurrent$TimeLimitedTests$$super$withFixture(TestBase.scala:9)
+	at app//org.scalatest.concurrent.TimeLimitedTests.$anonfun$withFixture$3(TimeLimitedTests.scala:154)
+	at app//org.scalatest.enablers.Timed$$anon$1.timeoutAfter(Timed.scala:127)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl(TimeLimits.scala:239)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl$(TimeLimits.scala:233)
+	at app//org.scalatest.concurrent.TimeLimits$.failAfterImpl(TimeLimits.scala:305)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture(TimeLimitedTests.scala:153)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture$(TimeLimitedTests.scala:150)
+	at app//infrastructure.TestBase.withFixture(TestBase.scala:9)
+	at app//org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at app//org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+	at app//org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+	at app//org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at app//scala.collection.immutable.List.foreach(List.scala:333)
+	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at app//org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+	at app//org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+	at app//org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+	at app//org.scalatest.Suite.run(Suite.scala:1124)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at app//org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+	at app//org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+	at app//infrastructure.TestBase.run(TestBase.scala:26)
+	at app//org.scalatest.Suite.callExecuteOnSuite$1(Suite.scala:1187)
+	at app//org.scalatest.Suite.$anonfun$runNestedSuites$1(Suite.scala:1234)
+	at app//scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1323)
+	at app//org.scalatest.Suite.runNestedSuites(Suite.scala:1232)
+	at app//org.scalatest.Suite.runNestedSuites$(Suite.scala:1166)
+	at app//org.scalatest.Suites.runNestedSuites(Suites.scala:56)
+	at app//org.scalatest.Suite.run(Suite.scala:1121)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//tetris.TetrisTestSuitesBase.runDirect(TetrisTestSuitesBase.scala:20)
+	at app//tetris.TetrisTestSuitesBase.runWithScoreCounter(TetrisTestSuitesBase.scala:14)
+	at app//tetris.TetrisTestSuite3_2.run(TetrisTestSuite3_2.scala:25)
+	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at app//org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at app//org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.18/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.18/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testGame8x11"></a>
+<h3 class="failures">testGame8x11</h3>
+<span class="code">
+<pre>org.scalatest.exceptions.TestFailedException: didPass was false
+--------------------------------------------------------------------------------
+This is what went wrong:
+
+step=0, rand=2, actions=&lt;&gt;
+Want     | Got ✗   
+-------------------
+....L... | IIIIIIII
+..LLL... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=1, rand=2, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....L.. | IIIIIIII
+...LLL.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=2, rand=2, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=3, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=4, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=5, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=6, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=7, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=8, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=9, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+
+step=10, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+........ | IIIIIIII
+
+step=11, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=12, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+..ZZ.... | IIIIIIII
+...ZZ... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=13, rand=6, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=14, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=15, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=16, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=17, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=18, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=19, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+......L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=20, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z..L. | IIIIIIII
+....LLL. | IIIIIIII
+
+step=21, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=22, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...SS... | IIIIIIII
+..SS.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=23, rand=4, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..SS.... | IIIIIIII
+.SS..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=24, rand=4, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+..S..... | IIIIIIII
+..SS.... | IIIIIIII
+...S.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=25, rand=4, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.S...... | IIIIIIII
+.SS..... | IIIIIIII
+..S..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=26, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.S...... | IIIIIIII
+.SS..... | IIIIIIII
+..S..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=27, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.S...... | IIIIIIII
+.SS..... | IIIIIIII
+..S..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=28, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S...... | IIIIIIII
+.SS..... | IIIIIIII
+..S..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=29, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S...... | IIIIIIII
+.SS..... | IIIIIIII
+..S..... | IIIIIIII
+........ | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=30, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S...... | IIIIIIII
+.SS..... | IIIIIIII
+..S..... | IIIIIIII
+....Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=31, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S...... | IIIIIIII
+.SS..... | IIIIIIII
+..S.Z... | IIIIIIII
+...ZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=32, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S...... | IIIIIIII
+.SS.Z... | IIIIIIII
+..SZZ.L. | IIIIIIII
+...ZLLL. | IIIIIIII
+
+step=33, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=34, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..IIII.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=35, rand=0, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+....I... | IIIIIIII
+....I... | IIIIIIII
+....I... | IIIIIIII
+....I... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=36, rand=0, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+...I.... | IIIIIIII
+...I.... | IIIIIIII
+...I.... | IIIIIIII
+...I.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=37, rand=0, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..I..... | IIIIIIII
+..I..... | IIIIIIII
+..I..... | IIIIIIII
+..I..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=38, rand=0, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.I...... | IIIIIIII
+.I...... | IIIIIIII
+.I...... | IIIIIIII
+.I...... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=39, rand=0, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=40, rand=0, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=41, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=42, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=43, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+........ | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=44, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+.S..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=45, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+.SSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=46, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+..SZLLL. | IIIIIIII
+
+step=47, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=48, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...OO... | IIIIIIII
+...OO... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=49, rand=3, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=50, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=51, rand=3, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.OO..... | IIIIIIII
+.OO..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=52, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.OO..... | IIIIIIII
+.OO..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=53, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.OO..... | IIIIIIII
+.OO..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=54, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.OO..... | IIIIIIII
+.OO..... | IIIIIIII
+........ | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=55, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.OO..... | IIIIIIII
+.OO..... | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=56, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I....... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=57, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+IS..Z... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=58, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=59, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...OO... | IIIIIIII
+...OO... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=60, rand=3, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=61, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=62, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=63, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=64, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=65, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=66, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+....L... | IIIIIIII
+..LLL... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=67, rand=2, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...L.... | IIIIIIII
+...L.... | IIIIIIII
+...LL... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=68, rand=2, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....L... | IIIIIIII
+....L... | IIIIIIII
+....LL.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=69, rand=2, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....L.. | IIIIIIII
+.....L.. | IIIIIIII
+.....LL. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=70, rand=2, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+....LLL. | IIIIIIII
+....L... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=71, rand=2, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+....LL.. | IIIIIIII
+.....L.. | IIIIIIII
+.....L.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=72, rand=2, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....LL. | IIIIIIII
+......L. | IIIIIIII
+......L. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=73, rand=2, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+......LL | IIIIIIII
+.......L | IIIIIIII
+.......L | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=74, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+......LL | IIIIIIII
+.......L | IIIIIIII
+.......L | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=75, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+......LL | IIIIIIII
+.......L | IIIIIIII
+.......L | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=76, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......LL | IIIIIIII
+.......L | IIIIIIII
+..OO...L | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=77, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......LL | IIIIIIII
+..OO...L | IIIIIIII
+..OO...L | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=78, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO..LL | IIIIIIII
+..OO...L | IIIIIIII
+I.OO...L | IIIIIIII
+ISOOZ... | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=79, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO..LL | IIIIIIII
+I.OO...L | IIIIIIII
+ISOOZ..L | IIIIIIII
+ISSZZ.L. | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=80, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO..LL | IIIIIIII
+ISOOZ..L | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLL. | IIIIIIII
+
+step=81, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=82, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TTT... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=83, rand=5, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....T... | IIIIIIII
+...TTT.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=84, rand=5, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....T.. | IIIIIIII
+....TTT. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=85, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+.....T.. | IIIIIIII
+.....TT. | IIIIIIII
+.....T.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=86, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+....TTT. | IIIIIIII
+.....T.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=87, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+....TTT. | IIIIIIII
+.....T.. | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=88, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....TTT. | IIIIIIII
+.....T.. | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=89, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....TTT. | IIIIIIII
+..OO.T.. | IIIIIIII
+..OO.... | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=90, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OOTTT. | IIIIIIII
+..OO.T.. | IIIIIIII
+I.OO.... | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=91, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OOTTT. | IIIIIIII
+I.OO.T.. | IIIIIIII
+ISOOZ.LL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=92, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISOOZTLL | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=93, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...SS... | IIIIIIII
+..SS.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=94, rand=4, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....SS.. | IIIIIIII
+...SS... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=95, rand=4, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+....S... | IIIIIIII
+....SS.. | IIIIIIII
+.....S.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=96, rand=4, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....S.. | IIIIIIII
+.....SS. | IIIIIIII
+......S. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=97, rand=4, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+......S. | IIIIIIII
+......SS | IIIIIIII
+.......S | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=98, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+......S. | IIIIIIII
+......SS | IIIIIIII
+.......S | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=99, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+......S. | IIIIIIII
+......SS | IIIIIIII
+.......S | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=100, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......S. | IIIIIIII
+......SS | IIIIIIII
+.......S | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=101, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......S. | IIIIIIII
+......SS | IIIIIIII
+..OO...S | IIIIIIII
+..OO.... | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=102, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+......S. | IIIIIIII
+..OO..SS | IIIIIIII
+..OO...S | IIIIIIII
+I.OOTTT. | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=103, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=104, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TTT... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=105, rand=5, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..T..... | IIIIIIII
+.TTT.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=106, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+..T..... | IIIIIIII
+..TT.... | IIIIIIII
+..T..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=107, rand=5, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.T...... | IIIIIIII
+.TT..... | IIIIIIII
+.T...... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=108, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+TTT..... | IIIIIIII
+.T...... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=109, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+.T...... | IIIIIIII
+TT...... | IIIIIIII
+.T...... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=110, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.T...... | IIIIIIII
+TT...... | IIIIIIII
+.T...... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=111, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.T...... | IIIIIIII
+TT...... | IIIIIIII
+.T...... | IIIIIIII
+........ | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=112, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.T...... | IIIIIIII
+TT...... | IIIIIIII
+.T...... | IIIIIIII
+..OO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=113, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.T...... | IIIIIIII
+TT...... | IIIIIIII
+.TOO..S. | IIIIIIII
+..OO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=114, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.T...... | IIIIIIII
+TTOO..S. | IIIIIIII
+.TOO..SS | IIIIIIII
+I.OOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=115, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOO..S. | IIIIIIII
+TTOO..SS | IIIIIIII
+ITOOTTTS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=116, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...SS... | IIIIIIII
+..SS.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOO..S. | IIIIIIII
+TTOO..SS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=117, rand=4, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...S.... | IIIIIIII
+...SS... | IIIIIIII
+....S... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOO..S. | IIIIIIII
+TTOO..SS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=118, rand=4, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....S... | IIIIIIII
+....SS.. | IIIIIIII
+.....S.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOO..S. | IIIIIIII
+TTOO..SS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=119, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+....S... | IIIIIIII
+....SS.. | IIIIIIII
+.....S.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOO..S. | IIIIIIII
+TTOO..SS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=120, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+....S... | IIIIIIII
+....SS.. | IIIIIIII
+.....S.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOO..S. | IIIIIIII
+TTOO..SS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=121, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....S... | IIIIIIII
+....SS.. | IIIIIIII
+.....S.. | IIIIIIII
+........ | IIIIIIII
+.TOO..S. | IIIIIIII
+TTOO..SS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=122, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....S... | IIIIIIII
+....SS.. | IIIIIIII
+.....S.. | IIIIIIII
+.TOO..S. | IIIIIIII
+TTOO..SS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=123, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....S... | IIIIIIII
+....SS.. | IIIIIIII
+.TOO.SS. | IIIIIIII
+TTOO..SS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=124, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....S... | IIIIIIII
+.TOOSSS. | IIIIIIII
+TTOO.SSS | IIIIIIII
+ISSZZ.LL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=125, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+TTOOSSSS | IIIIIIII
+ISSZZSLL | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=126, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...OO... | IIIIIIII
+...OO... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=127, rand=3, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=128, rand=3, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.OO..... | IIIIIIII
+.OO..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=129, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.OO..... | IIIIIIII
+.OO..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=130, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=131, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=132, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=133, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=134, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=135, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+........ | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=136, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=137, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+....L... | IIIIIIII
+..LLL... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=138, rand=2, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...L.... | IIIIIIII
+...L.... | IIIIIIII
+...LL... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=139, rand=2, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..LLL... | IIIIIIII
+..L..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=140, rand=2, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+..LL.... | IIIIIIII
+...L.... | IIIIIIII
+...L.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=141, rand=2, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+...LL... | IIIIIIII
+....L... | IIIIIIII
+....L... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=142, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+...LL... | IIIIIIII
+....L... | IIIIIIII
+....L... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=143, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+....L... | IIIIIIII
+....L... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=144, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+....L... | IIIIIIII
+....L... | IIIIIIII
+........ | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=145, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+....L... | IIIIIIII
+....L... | IIIIIIII
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=146, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+....L... | IIIIIIII
+..OOL... | IIIIIIII
+..OO.... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=147, rand=2, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=148, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+..J..... | IIIIIIII
+..JJJ... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=149, rand=1, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...JJ... | IIIIIIII
+...J.... | IIIIIIII
+...J.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=150, rand=1, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....JJ.. | IIIIIIII
+....J... | IIIIIIII
+....J... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=151, rand=1, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+...JJJ.. | IIIIIIII
+.....J.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=152, rand=1, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+....JJJ. | IIIIIIII
+......J. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=153, rand=1, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.....JJJ | IIIIIIII
+.......J | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=154, rand=1, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.....JJJ | IIIIIIII
+.......J | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=155, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.....JJJ | IIIIIIII
+.......J | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=156, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.....JJJ | IIIIIIII
+.......J | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=157, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.....JJJ | IIIIIIII
+.......J | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=158, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.....JJJ | IIIIIIII
+...LL..J | IIIIIIII
+..OOL... | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=159, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LLJJJ | IIIIIIII
+..OOL..J | IIIIIIII
+..OOL... | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=160, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+..OOL..J | IIIIIIII
+.TOOS.S. | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=161, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=162, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TTT... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=163, rand=5, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..T..... | IIIIIIII
+.TTT.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=164, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+..T..... | IIIIIIII
+..TT.... | IIIIIIII
+..T..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=165, rand=5, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.T...... | IIIIIIII
+.TT..... | IIIIIIII
+.T...... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=166, rand=5, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+T....... | IIIIIIII
+TT...... | IIIIIIII
+T....... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=167, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+T....... | IIIIIIII
+TT...... | IIIIIIII
+T....... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=168, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TT...... | IIIIIIII
+T....... | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=169, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TT...... | IIIIIIII
+T....... | IIIIIIII
+...LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=170, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TT...... | IIIIIIII
+T..LL... | IIIIIIII
+..OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=171, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TT.LL... | IIIIIIII
+T.OOL... | IIIIIIII
+..OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=172, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T..LL... | IIIIIIII
+TTOOL... | IIIIIIII
+T.OOLJJJ | IIIIIIII
+.TOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=173, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOLJJJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=174, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+..J..... | IIIIIIII
+..JJJ... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=175, rand=1, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...JJ... | IIIIIIII
+...J.... | IIIIIIII
+...J.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=176, rand=1, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..JJJ... | IIIIIIII
+....J... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=177, rand=1, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...J.... | IIIIIIII
+...J.... | IIIIIIII
+..JJ.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=178, rand=1, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....J... | IIIIIIII
+....J... | IIIIIIII
+...JJ... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=179, rand=1, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....J.. | IIIIIIII
+.....J.. | IIIIIIII
+....JJ.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=180, rand=1, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+......J. | IIIIIIII
+......J. | IIIIIIII
+.....JJ. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=181, rand=1, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.......J | IIIIIIII
+.......J | IIIIIIII
+......JJ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=182, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.......J | IIIIIIII
+.......J | IIIIIIII
+......JJ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=183, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+.......J | IIIIIIII
+......JJ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=184, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+.......J | IIIIIIII
+......JJ | IIIIIIII
+........ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=185, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+.......J | IIIIIIII
+......JJ | IIIIIIII
+...LL... | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=186, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+.......J | IIIIIIII
+...LL.JJ | IIIIIIII
+T.OOL... | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=187, rand=1, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=188, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...SS... | IIIIIIII
+..SS.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=189, rand=4, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...S.... | IIIIIIII
+...SS... | IIIIIIII
+....S... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=190, rand=4, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..S..... | IIIIIIII
+..SS.... | IIIIIIII
+...S.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=191, rand=4, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.S...... | IIIIIIII
+.SS..... | IIIIIIII
+..S..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=192, rand=4, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+S....... | IIIIIIII
+SS...... | IIIIIIII
+.S...... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=193, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+S....... | IIIIIIII
+SS...... | IIIIIIII
+.S...... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=194, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+S....... | IIIIIIII
+SS...... | IIIIIIII
+.S...... | IIIIIIII
+........ | IIIIIIII
+.......J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=195, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+S....... | IIIIIIII
+SS...... | IIIIIIII
+.S...... | IIIIIIII
+.......J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=196, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+S....... | IIIIIIII
+SS...... | IIIIIIII
+.S.....J | IIIIIIII
+...LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=197, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+S....... | IIIIIIII
+SS.....J | IIIIIIII
+.S.LL..J | IIIIIIII
+T.OOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=198, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+S......J | IIIIIIII
+SS.LL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=199, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+..ZZ.... | IIIIIIII
+...ZZ... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+S......J | IIIIIIII
+SS.LL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=200, rand=6, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+S......J | IIIIIIII
+SS.LL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=201, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+...Z.... | IIIIIIII
+..ZZ.... | IIIIIIII
+..Z..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+S......J | IIIIIIII
+SS.LL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=202, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+...Z.... | IIIIIIII
+..ZZ.... | IIIIIIII
+..Z..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+S......J | IIIIIIII
+SS.LL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=203, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+...Z.... | IIIIIIII
+..ZZ.... | IIIIIIII
+..Z..... | IIIIIIII
+........ | IIIIIIII
+S......J | IIIIIIII
+SS.LL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=204, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...Z.... | IIIIIIII
+..ZZ.... | IIIIIIII
+..Z..... | IIIIIIII
+S......J | IIIIIIII
+SS.LL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=205, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...Z.... | IIIIIIII
+..ZZ.... | IIIIIIII
+S.Z....J | IIIIIIII
+SS.LL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=206, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...Z.... | IIIIIIII
+S.ZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=207, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+..ZZ.... | IIIIIIII
+...ZZ... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...Z.... | IIIIIIII
+S.ZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=208, rand=6, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...Z.... | IIIIIIII
+S.ZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=209, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+...Z.... | IIIIIIII
+..ZZ.... | IIIIIIII
+..Z..... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...Z.... | IIIIIIII
+S.ZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=210, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..Z..... | IIIIIIII
+.ZZ..... | IIIIIIII
+.Z...... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...Z.... | IIIIIIII
+S.ZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=211, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZ..... | IIIIIIII
+.Z...... | IIIIIIII
+........ | IIIIIIII
+...Z.... | IIIIIIII
+S.ZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=212, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZ..... | IIIIIIII
+.Z...... | IIIIIIII
+...Z.... | IIIIIIII
+S.ZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=213, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZ..... | IIIIIIII
+.Z.Z.... | IIIIIIII
+S.ZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=214, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=215, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TTT... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=216, rand=5, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....T... | IIIIIIII
+...TTT.. | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=217, rand=5, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TTT... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=218, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+...TT... | IIIIIIII
+...T.... | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=219, rand=5, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..T..... | IIIIIIII
+..TT.... | IIIIIIII
+..T..... | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=220, rand=5, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.T...... | IIIIIIII
+.TT..... | IIIIIIII
+.T...... | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=221, rand=5, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+T....... | IIIIIIII
+TT...... | IIIIIIII
+T....... | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=222, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+T....... | IIIIIIII
+TT...... | IIIIIIII
+T....... | IIIIIIII
+..Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=223, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TT...... | IIIIIIII
+T.Z..... | IIIIIIII
+.ZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=224, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=225, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...OO... | IIIIIIII
+...OO... | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=226, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....OO.. | IIIIIIII
+....OO.. | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=227, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....OO. | IIIIIIII
+.....OO. | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=228, rand=3, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+....OO.. | IIIIIIII
+....OO.. | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=229, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....OO. | IIIIIIII
+.....OO. | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=230, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.....OO. | IIIIIIII
+.....OO. | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=231, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.....OO. | IIIIIIII
+T....OO. | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=232, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....OO. | IIIIIIII
+TTZ..OO. | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=233, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..OO. | IIIIIIII
+TZZZ.OO. | IIIIIIII
+SZZZ...J | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=234, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.OO. | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+SSZLL..J | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=235, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+SSZLLOOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=236, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+SSZLLOOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=237, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+..ZZ.... | IIIIIIII
+...ZZ... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=238, rand=6, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=239, rand=6, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....Z.. | IIIIIIII
+....ZZ.. | IIIIIIII
+....Z... | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=240, rand=6, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+......Z. | IIIIIIII
+.....ZZ. | IIIIIIII
+.....Z.. | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=241, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.....Z.. | IIIIIIII
+....ZZ.. | IIIIIIII
+....Z... | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=242, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.....Z.. | IIIIIIII
+....ZZ.. | IIIIIIII
+....Z... | IIIIIIII
+T....... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=243, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.....Z.. | IIIIIIII
+....ZZ.. | IIIIIIII
+T...Z... | IIIIIIII
+TTZ..... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=244, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+.....Z.. | IIIIIIII
+T...ZZ.. | IIIIIIII
+TTZ.Z... | IIIIIIII
+TZZZ.... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=245, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....Z.. | IIIIIIII
+TTZ.ZZ.. | IIIIIIII
+TZZZZ... | IIIIIIII
+SZZZ.OOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=246, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+SZZZZOOJ | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=247, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TTT... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=248, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+...TT... | IIIIIIII
+...T.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=249, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..TTT... | IIIIIIII
+...T.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=250, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TT.... | IIIIIIII
+...T.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=251, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TTT... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=252, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+...TT... | IIIIIIII
+...T.... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=253, rand=5, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....T... | IIIIIIII
+....TT.. | IIIIIIII
+....T... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=254, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+....T... | IIIIIIII
+....TT.. | IIIIIIII
+....T... | IIIIIIII
+........ | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=255, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+....T... | IIIIIIII
+....TT.. | IIIIIIII
+....T... | IIIIIIII
+T....... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=256, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....T... | IIIIIIII
+....TT.. | IIIIIIII
+T...T... | IIIIIIII
+TTZ..Z.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=257, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....T... | IIIIIIII
+T...TT.. | IIIIIIII
+TTZ.TZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=258, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TTT... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+....T... | IIIIIIII
+T...TT.. | IIIIIIII
+TTZ.TZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=259, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+...TT... | IIIIIIII
+...T.... | IIIIIIII
+........ | IIIIIIII
+....T... | IIIIIIII
+T...TT.. | IIIIIIII
+TTZ.TZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=260, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..TTT... | IIIIIIII
+...T.... | IIIIIIII
+........ | IIIIIIII
+....T... | IIIIIIII
+T...TT.. | IIIIIIII
+TTZ.TZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=261, rand=5, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...T.... | IIIIIIII
+..TT.... | IIIIIIII
+...T.... | IIIIIIII
+........ | IIIIIIII
+....T... | IIIIIIII
+T...TT.. | IIIIIIII
+TTZ.TZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=262, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+...T.... | IIIIIIII
+..TT.... | IIIIIIII
+...T.... | IIIIIIII
+....T... | IIIIIIII
+T...TT.. | IIIIIIII
+TTZ.TZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=263, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+...T.... | IIIIIIII
+..TT.... | IIIIIIII
+...TT... | IIIIIIII
+T...TT.. | IIIIIIII
+TTZ.TZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=264, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...T.... | IIIIIIII
+..TTT... | IIIIIIII
+T..TTT.. | IIIIIIII
+TTZ.TZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=265, rand=5, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...TT... | IIIIIIII
+T.TTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=266, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+..ZZ.... | IIIIIIII
+...ZZ... | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+...TT... | IIIIIIII
+T.TTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=267, rand=6, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+....Z... | IIIIIIII
+...ZZ... | IIIIIIII
+...Z.... | IIIIIIII
+........ | IIIIIIII
+...TT... | IIIIIIII
+T.TTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=268, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+...Z.... | IIIIIIII
+..ZZ.... | IIIIIIII
+..Z..... | IIIIIIII
+........ | IIIIIIII
+...TT... | IIIIIIII
+T.TTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=269, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..Z..... | IIIIIIII
+.ZZ..... | IIIIIIII
+.Z...... | IIIIIIII
+........ | IIIIIIII
+...TT... | IIIIIIII
+T.TTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=270, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZ..... | IIIIIIII
+.Z...... | IIIIIIII
+...TT... | IIIIIIII
+T.TTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=271, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZ..... | IIIIIIII
+.Z.TT... | IIIIIIII
+T.TTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=272, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT... | IIIIIIII
+TZTTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=273, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..IIII.. | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT... | IIIIIIII
+TZTTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=274, rand=0, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+....I... | IIIIIIII
+....I... | IIIIIIII
+....I... | IIIIIIII
+..Z.I... | IIIIIIII
+.ZZTT... | IIIIIIII
+TZTTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=275, rand=0, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....I.. | IIIIIIII
+.....I.. | IIIIIIII
+.....I.. | IIIIIIII
+..Z..I.. | IIIIIIII
+.ZZTT... | IIIIIIII
+TZTTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=276, rand=0, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+......I. | IIIIIIII
+......I. | IIIIIIII
+......I. | IIIIIIII
+..Z...I. | IIIIIIII
+.ZZTT... | IIIIIIII
+TZTTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=277, rand=0, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.......I | IIIIIIII
+.......I | IIIIIIII
+.......I | IIIIIIII
+..Z....I | IIIIIIII
+.ZZTT... | IIIIIIII
+TZTTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=278, rand=0, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+......I. | IIIIIIII
+......I. | IIIIIIII
+......I. | IIIIIIII
+..Z...I. | IIIIIIII
+.ZZTT... | IIIIIIII
+TZTTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=279, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+......I. | IIIIIIII
+......I. | IIIIIIII
+..Z...I. | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTT.. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=280, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+......I. | IIIIIIII
+..Z...I. | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZ.. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=281, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..Z...I. | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZ.. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=282, rand=0, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=283, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+..ZZ.... | IIIIIIII
+...ZZ... | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=284, rand=6, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+...ZZ... | IIIIIIII
+....ZZ.. | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=285, rand=6, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....ZZ.. | IIIIIIII
+.....ZZ. | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=286, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+...ZZ... | IIIIIIII
+....ZZ.. | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=287, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..ZZ.... | IIIIIIII
+...ZZ... | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=288, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.ZZ..... | IIIIIIII
+..ZZ.... | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=289, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+ZZ...... | IIIIIIII
+.ZZ..... | IIIIIIII
+........ | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=290, rand=6, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+..Z..... | IIIIIIII
+.ZZ..... | IIIIIIII
+.Z...... | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=291, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.Z...... | IIIIIIII
+ZZ...... | IIIIIIII
+Z....... | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=292, rand=6, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.Z...... | IIIIIIII
+ZZ...... | IIIIIIII
+Z....... | IIIIIIII
+..Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=293, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+.Z...... | IIIIIIII
+ZZ...... | IIIIIIII
+Z.Z..... | IIIIIIII
+.ZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=294, rand=6, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.Z...... | IIIIIIII
+ZZZ..... | IIIIIIII
+ZZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=295, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...SS... | IIIIIIII
+..SS.... | IIIIIIII
+.Z...... | IIIIIIII
+ZZZ..... | IIIIIIII
+ZZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=296, rand=4, actions=&lt;RotateRight&gt;
+Want     | Got ✗   
+-------------------
+...S.... | IIIIIIII
+...SS... | IIIIIIII
+.Z..S... | IIIIIIII
+ZZZ..... | IIIIIIII
+ZZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=297, rand=4, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....S... | IIIIIIII
+....SS.. | IIIIIIII
+.Z...S.. | IIIIIIII
+ZZZ..... | IIIIIIII
+ZZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=298, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+....S... | IIIIIIII
+.Z..SS.. | IIIIIIII
+ZZZ..S.. | IIIIIIII
+ZZZTT.I. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=299, rand=4, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.Z..S... | IIIIIIII
+ZZZ.SS.. | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=300, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...OO... | IIIIIIII
+...OO... | IIIIIIII
+.Z..S... | IIIIIIII
+ZZZ.SS.. | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=301, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+....OO.. | IIIIIIII
+....OO.. | IIIIIIII
+.Z..S... | IIIIIIII
+ZZZ.SS.. | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=302, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+.....OO. | IIIIIIII
+.....OO. | IIIIIIII
+.Z..S... | IIIIIIII
+ZZZ.SS.. | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=303, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+......OO | IIIIIIII
+......OO | IIIIIIII
+.Z..S... | IIIIIIII
+ZZZ.SS.. | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=304, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+......OO | IIIIIIII
+.Z..S.OO | IIIIIIII
+ZZZ.SS.. | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=305, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+........ | IIIIIIII
+.Z..S.OO | IIIIIIII
+ZZZ.SSOO | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=306, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+...OO... | IIIIIIII
+...OO... | IIIIIIII
+.Z..S.OO | IIIIIIII
+ZZZ.SSOO | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=307, rand=3, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.Z..S.OO | IIIIIIII
+ZZZ.SSOO | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=308, rand=3, actions=&lt;Left&gt;
+Want     | Got ✗   
+-------------------
+.OO..... | IIIIIIII
+.OO..... | IIIIIIII
+.Z..S.OO | IIIIIIII
+ZZZ.SSOO | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=309, rand=3, actions=&lt;Right&gt;
+Want     | Got ✗   
+-------------------
+..OO.... | IIIIIIII
+..OO.... | IIIIIIII
+.Z..S.OO | IIIIIIII
+ZZZ.SSOO | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=310, rand=3, actions=&lt;Down&gt;
+Want     | Got ✗   
+-------------------
+........ | IIIIIIII
+..OO.... | IIIIIIII
+.ZOOS.OO | IIIIIIII
+ZZZ.SSOO | IIIIIIII
+ZZZTTSI. | IIIIIIII
+TZTTTTI. | IIIIIIII
+TTZTTZI. | IIIIIIII
+TZZZZZI. | IIIIIIII
+TSOOL.JJ | IIIIIIII
+TTOOS.SJ | IIIIIIII
+I.SZLLLL | IIIIIIII
+
+step=311, rand=1, actions=&lt;Down&gt;
+Want              | Got ✗   
+----------------------------
+GameOverDisplay() | IIIIIIII
+                  | IIIIIIII
+                  | IIIIIIII
+                  | IIIIIIII
+                  | IIIIIIII
+                  | IIIIIIII
+                  | IIIIIIII
+                  | IIIIIIII
+                  | IIIIIIII
+                  | IIIIIIII
+                  | IIIIIIII
+
+
+	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
+	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
+	at app//org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
+	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:503)
+	at app//generic.GameTestSuite.checkGame(GameTestSuite.scala:298)
+	at app//tetris.TetrisTestSuiteBase.checkGame(TetrisTestSuiteBase.scala:103)
+	at app//tetris.FullGameTests.$anonfun$new$2(FullGameTests.scala:5744)
+	at app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at app//infrastructure.TestBase.$anonfun$test$1(TestBase.scala:36)
+	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
+	at app//org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at app//infrastructure.TestBase.org$scalatest$concurrent$TimeLimitedTests$$super$withFixture(TestBase.scala:9)
+	at app//org.scalatest.concurrent.TimeLimitedTests.$anonfun$withFixture$3(TimeLimitedTests.scala:154)
+	at app//org.scalatest.enablers.Timed$$anon$1.timeoutAfter(Timed.scala:127)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl(TimeLimits.scala:239)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl$(TimeLimits.scala:233)
+	at app//org.scalatest.concurrent.TimeLimits$.failAfterImpl(TimeLimits.scala:305)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture(TimeLimitedTests.scala:153)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture$(TimeLimitedTests.scala:150)
+	at app//infrastructure.TestBase.withFixture(TestBase.scala:9)
+	at app//org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at app//org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+	at app//org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+	at app//org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at app//scala.collection.immutable.List.foreach(List.scala:333)
+	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at app//org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+	at app//org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+	at app//org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+	at app//org.scalatest.Suite.run(Suite.scala:1124)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at app//org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+	at app//org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+	at app//infrastructure.TestBase.run(TestBase.scala:26)
+	at app//org.scalatest.Suite.callExecuteOnSuite$1(Suite.scala:1187)
+	at app//org.scalatest.Suite.$anonfun$runNestedSuites$1(Suite.scala:1234)
+	at app//scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1323)
+	at app//org.scalatest.Suite.runNestedSuites(Suite.scala:1232)
+	at app//org.scalatest.Suite.runNestedSuites$(Suite.scala:1166)
+	at app//org.scalatest.Suites.runNestedSuites(Suites.scala:56)
+	at app//org.scalatest.Suite.run(Suite.scala:1121)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//tetris.TetrisTestSuitesBase.runDirect(TetrisTestSuitesBase.scala:20)
+	at app//tetris.TetrisTestSuitesBase.runWithScoreCounter(TetrisTestSuitesBase.scala:14)
+	at app//tetris.TetrisTestSuite3_2.run(TetrisTestSuite3_2.scala:25)
+	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at app//org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at app//org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.18/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.18/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testInterleave5x9and8x11"></a>
+<h3 class="failures">testInterleave5x9and8x11</h3>
+<span class="code">
+<pre>org.scalatest.exceptions.TestFailedException: didPass was false
+ Hint: It should be possible to “run” multiple games simultaneously, i.e., it should not be a problem to have multiple instances of TetrisLogic which act independently. To test this, we perform “interleave tests”: we instantiate two TetrisLogic objects with different board sizes and alternate between performing a step on one and a step on the other. If all is correct, the two games should progress exactly as they would if they were the only snake games being run. If this is not true, then there is likely some global state through which one game influences the other.   Hence if you fail this test but you passed the other full game test, then you have some global state. Running two instances of TetrisLogic/and alternately doing steps between them results in some interference.   
+	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
+	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
+	at app//org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
+	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:503)
+	at app//generic.GameTestSuite.checkInterleave(GameTestSuite.scala:303)
+	at app//tetris.TetrisTestSuiteBase.checkInterleave(TetrisTestSuiteBase.scala:109)
+	at app//tetris.FullGameTests.$anonfun$new$4(FullGameTests.scala:5752)
+	at app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at app//infrastructure.TestBase.$anonfun$test$1(TestBase.scala:36)
+	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
+	at app//org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at app//infrastructure.TestBase.org$scalatest$concurrent$TimeLimitedTests$$super$withFixture(TestBase.scala:9)
+	at app//org.scalatest.concurrent.TimeLimitedTests.$anonfun$withFixture$3(TimeLimitedTests.scala:154)
+	at app//org.scalatest.enablers.Timed$$anon$1.timeoutAfter(Timed.scala:127)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl(TimeLimits.scala:239)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl$(TimeLimits.scala:233)
+	at app//org.scalatest.concurrent.TimeLimits$.failAfterImpl(TimeLimits.scala:305)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture(TimeLimitedTests.scala:153)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture$(TimeLimitedTests.scala:150)
+	at app//infrastructure.TestBase.withFixture(TestBase.scala:9)
+	at app//org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at app//org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+	at app//org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+	at app//org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at app//scala.collection.immutable.List.foreach(List.scala:333)
+	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at app//org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+	at app//org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+	at app//org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+	at app//org.scalatest.Suite.run(Suite.scala:1124)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at app//org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+	at app//org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+	at app//infrastructure.TestBase.run(TestBase.scala:26)
+	at app//org.scalatest.Suite.callExecuteOnSuite$1(Suite.scala:1187)
+	at app//org.scalatest.Suite.$anonfun$runNestedSuites$1(Suite.scala:1234)
+	at app//scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1323)
+	at app//org.scalatest.Suite.runNestedSuites(Suite.scala:1232)
+	at app//org.scalatest.Suite.runNestedSuites$(Suite.scala:1166)
+	at app//org.scalatest.Suites.runNestedSuites(Suites.scala:56)
+	at app//org.scalatest.Suite.run(Suite.scala:1121)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//tetris.TetrisTestSuitesBase.runDirect(TetrisTestSuitesBase.scala:20)
+	at app//tetris.TetrisTestSuitesBase.runWithScoreCounter(TetrisTestSuitesBase.scala:14)
+	at app//tetris.TetrisTestSuite3_2.run(TetrisTestSuite3_2.scala:25)
+	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at app//org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at app//org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.18/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.18/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testInterleave8x11and6x10"></a>
+<h3 class="failures">testInterleave8x11and6x10</h3>
+<span class="code">
+<pre>org.scalatest.exceptions.TestFailedException: didPass was false
+ Hint: It should be possible to “run” multiple games simultaneously, i.e., it should not be a problem to have multiple instances of TetrisLogic which act independently. To test this, we perform “interleave tests”: we instantiate two TetrisLogic objects with different board sizes and alternate between performing a step on one and a step on the other. If all is correct, the two games should progress exactly as they would if they were the only snake games being run. If this is not true, then there is likely some global state through which one game influences the other.   Hence if you fail this test but you passed the other full game test, then you have some global state. Running two instances of TetrisLogic/and alternately doing steps between them results in some interference.   
+	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
+	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
+	at app//org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
+	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:503)
+	at app//generic.GameTestSuite.checkInterleave(GameTestSuite.scala:303)
+	at app//tetris.TetrisTestSuiteBase.checkInterleave(TetrisTestSuiteBase.scala:109)
+	at app//tetris.FullGameTests.$anonfun$new$5(FullGameTests.scala:5757)
+	at app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at app//infrastructure.TestBase.$anonfun$test$1(TestBase.scala:36)
+	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
+	at app//org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at app//infrastructure.TestBase.org$scalatest$concurrent$TimeLimitedTests$$super$withFixture(TestBase.scala:9)
+	at app//org.scalatest.concurrent.TimeLimitedTests.$anonfun$withFixture$3(TimeLimitedTests.scala:154)
+	at app//org.scalatest.enablers.Timed$$anon$1.timeoutAfter(Timed.scala:127)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl(TimeLimits.scala:239)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl$(TimeLimits.scala:233)
+	at app//org.scalatest.concurrent.TimeLimits$.failAfterImpl(TimeLimits.scala:305)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture(TimeLimitedTests.scala:153)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture$(TimeLimitedTests.scala:150)
+	at app//infrastructure.TestBase.withFixture(TestBase.scala:9)
+	at app//org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at app//org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+	at app//org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+	at app//org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at app//scala.collection.immutable.List.foreach(List.scala:333)
+	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at app//org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+	at app//org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+	at app//org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+	at app//org.scalatest.Suite.run(Suite.scala:1124)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at app//org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+	at app//org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+	at app//infrastructure.TestBase.run(TestBase.scala:26)
+	at app//org.scalatest.Suite.callExecuteOnSuite$1(Suite.scala:1187)
+	at app//org.scalatest.Suite.$anonfun$runNestedSuites$1(Suite.scala:1234)
+	at app//scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1323)
+	at app//org.scalatest.Suite.runNestedSuites(Suite.scala:1232)
+	at app//org.scalatest.Suite.runNestedSuites$(Suite.scala:1166)
+	at app//org.scalatest.Suites.runNestedSuites(Suites.scala:56)
+	at app//org.scalatest.Suite.run(Suite.scala:1121)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//tetris.TetrisTestSuitesBase.runDirect(TetrisTestSuitesBase.scala:20)
+	at app//tetris.TetrisTestSuitesBase.runWithScoreCounter(TetrisTestSuitesBase.scala:14)
+	at app//tetris.TetrisTestSuite3_2.run(TetrisTestSuite3_2.scala:25)
+	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at app//org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at app//org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.18/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.18/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testGame5x9</td>
+<td class="failures">0.016s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testGame6x10</td>
+<td class="failures">0.047s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testGame8x11</td>
+<td class="failures">0.075s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testInterleave5x9and8x11</td>
+<td class="failures">0.013s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testInterleave8x11and6x10</td>
+<td class="failures">0.010s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>You got 0/50 points!
+Your base grade for the tetris exercise will be : 0.00
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at Sep 20, 2023, 4:21:59 PM</p>
+</div>
+</div>
+</body>
+</html>

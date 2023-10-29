@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.ClearLinesTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-10-01T17:07:44" hostname="DESKTOP-FBIJT05" time="0.062">
+  <properties/>
+  <testcase name="testClear1Line" classname="tetris.ClearLinesTests" time="0.002"/>
+  <testcase name="testClear1LineMiddle" classname="tetris.ClearLinesTests" time="0.024"/>
+  <testcase name="testClear2Lines" classname="tetris.ClearLinesTests" time="0.007"/>
+  <testcase name="testClear3Lines" classname="tetris.ClearLinesTests" time="0.021"/>
+  <testcase name="testClear4Lines" classname="tetris.ClearLinesTests" time="0.004"/>
+  <system-out><![CDATA[CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+CAN SPAWN?: true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.DropTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-20T14:21:58" hostname="LAPTOP-O5MRDU5L" time="0.042">
+  <properties/>
+  <testcase name="testDrop" classname="tetris.DropTests" time="0.042">
+    <failure message="org.scalatest.exceptions.TestFailedException: didPass was false&#10;Hint: The drop action immediately moves the current tetromino all the way down such that it&#10;collides with other blocks or the bottom of the board, and spawns a new tetromino.&#10;--------------------------------------------------------------------------------&#10;This is what went wrong:&#10;&#10;step=0, rand=0, actions=&lt;Drop&gt;&#10;Want | Got ✗&#10;------------&#10;.... | IIII &#10;IIII | IIII &#10;.... | IIII &#10;.... | IIII &#10;.T.. | IIII &#10;TTT. | IIII &#10;&#10;step=1, rand=0, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;..I. | IIII &#10;..I. | IIII &#10;..I. | IIII &#10;..I. | IIII &#10;.T.. | IIII &#10;TTT. | IIII &#10;&#10;step=2, rand=0, actions=&lt;Right&gt;&#10;Want | Got ✗&#10;------------&#10;...I | IIII &#10;...I | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.. | IIII &#10;TTT. | IIII &#10;&#10;step=3, rand=5, actions=&lt;Drop&gt;&#10;Want | Got ✗&#10;------------&#10;.T.. | IIII &#10;TTT. | IIII &#10;.... | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.I | IIII &#10;&#10;step=4, rand=5, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;.T.. | IIII &#10;.TT. | IIII &#10;.T.. | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.I | IIII &#10;&#10;step=5, rand=5, actions=&lt;Left&gt;&#10;Want | Got ✗&#10;------------&#10;T... | IIII &#10;TT.. | IIII &#10;T... | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.I | IIII &#10;&#10;step=6, rand=0, actions=&lt;Drop&gt;&#10;Want | Got ✗&#10;------------&#10;.... | IIII &#10;IIII | IIII &#10;.... | IIII &#10;T..I | IIII &#10;TT.I | IIII &#10;TT.I | IIII &#10;&#10;step=7, rand=0, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;..I. | IIII &#10;..I. | IIII &#10;..I. | IIII &#10;T.II | IIII &#10;TT.I | IIII &#10;TT.I | IIII &#10;&#10;step=8, rand=5, actions=&lt;Drop&gt;&#10;Want | Got ✗&#10;------------&#10;.T.. | IIII &#10;TTT. | IIII &#10;.... | IIII &#10;.... | IIII &#10;..I. | IIII &#10;T.II | IIII &#10;&#10;step=9, rand=5, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;.T.. | IIII &#10;.TT. | IIII &#10;.T.. | IIII &#10;.... | IIII &#10;..I. | IIII &#10;T.II | IIII &#10;&#10;step=10, rand=5, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;.... | IIII &#10;TTT. | IIII &#10;.T.. | IIII &#10;.... | IIII &#10;..I. | IIII &#10;T.II | IIII &#10;&#10;step=11, rand=5, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;.T.. | IIII &#10;TT.. | IIII &#10;.T.. | IIII &#10;.... | IIII &#10;..I. | IIII &#10;T.II | IIII &#10;&#10;step=12, rand=0, actions=&lt;Drop&gt;&#10;Want | Got ✗&#10;------------&#10;.... | IIII &#10;IIII | IIII &#10;.... | IIII &#10;.... | IIII &#10;.T.. | IIII &#10;TTI. | IIII &#10;&#10;step=13, rand=0, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;..I. | IIII &#10;..I. | IIII &#10;..I. | IIII &#10;..I. | IIII &#10;.T.. | IIII &#10;TTI. | IIII &#10;&#10;step=14, rand=0, actions=&lt;Right&gt;&#10;Want | Got ✗&#10;------------&#10;...I | IIII &#10;...I | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.. | IIII &#10;TTI. | IIII &#10;&#10;step=15, rand=5, actions=&lt;Drop&gt;&#10;Want | Got ✗&#10;------------&#10;.T.. | IIII &#10;TTT. | IIII &#10;.... | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.I | IIII &#10;&#10;step=16, rand=5, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;.T.. | IIII &#10;.TT. | IIII &#10;.T.. | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.I | IIII &#10;&#10;step=17, rand=5, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;.... | IIII &#10;TTT. | IIII &#10;.T.. | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.I | IIII &#10;&#10;step=18, rand=5, actions=&lt;RotateRight&gt;&#10;Want | Got ✗&#10;------------&#10;.T.. | IIII &#10;TT.. | IIII &#10;.T.. | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.I | IIII &#10;&#10;step=19, rand=5, actions=&lt;Right&gt;&#10;Want | Got ✗&#10;------------&#10;..T. | IIII &#10;.TT. | IIII &#10;..T. | IIII &#10;...I | IIII &#10;...I | IIII &#10;.T.I | IIII &#10;&#10;step=20, rand=0, actions=&lt;Drop&gt;&#10;Want | Got ✗&#10;------------&#10;.... | IIII &#10;IIII | IIII &#10;.... | IIII &#10;..TI | IIII &#10;.TTI | IIII &#10;.TTI | IIII &#10;&#10;" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: didPass was false
+Hint: The drop action immediately moves the current tetromino all the way down such that it
+collides with other blocks or the bottom of the board, and spawns a new tetromino.
+--------------------------------------------------------------------------------
+This is what went wrong:
+
+step=0, rand=0, actions=&lt;Drop&gt;
+Want | Got ✗
+------------
+.... | IIII 
+IIII | IIII 
+.... | IIII 
+.... | IIII 
+.T.. | IIII 
+TTT. | IIII 
+
+step=1, rand=0, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+..I. | IIII 
+..I. | IIII 
+..I. | IIII 
+..I. | IIII 
+.T.. | IIII 
+TTT. | IIII 
+
+step=2, rand=0, actions=&lt;Right&gt;
+Want | Got ✗
+------------
+...I | IIII 
+...I | IIII 
+...I | IIII 
+...I | IIII 
+.T.. | IIII 
+TTT. | IIII 
+
+step=3, rand=5, actions=&lt;Drop&gt;
+Want | Got ✗
+------------
+.T.. | IIII 
+TTT. | IIII 
+.... | IIII 
+...I | IIII 
+...I | IIII 
+.T.I | IIII 
+
+step=4, rand=5, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+.T.. | IIII 
+.TT. | IIII 
+.T.. | IIII 
+...I | IIII 
+...I | IIII 
+.T.I | IIII 
+
+step=5, rand=5, actions=&lt;Left&gt;
+Want | Got ✗
+------------
+T... | IIII 
+TT.. | IIII 
+T... | IIII 
+...I | IIII 
+...I | IIII 
+.T.I | IIII 
+
+step=6, rand=0, actions=&lt;Drop&gt;
+Want | Got ✗
+------------
+.... | IIII 
+IIII | IIII 
+.... | IIII 
+T..I | IIII 
+TT.I | IIII 
+TT.I | IIII 
+
+step=7, rand=0, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+..I. | IIII 
+..I. | IIII 
+..I. | IIII 
+T.II | IIII 
+TT.I | IIII 
+TT.I | IIII 
+
+step=8, rand=5, actions=&lt;Drop&gt;
+Want | Got ✗
+------------
+.T.. | IIII 
+TTT. | IIII 
+.... | IIII 
+.... | IIII 
+..I. | IIII 
+T.II | IIII 
+
+step=9, rand=5, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+.T.. | IIII 
+.TT. | IIII 
+.T.. | IIII 
+.... | IIII 
+..I. | IIII 
+T.II | IIII 
+
+step=10, rand=5, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+.... | IIII 
+TTT. | IIII 
+.T.. | IIII 
+.... | IIII 
+..I. | IIII 
+T.II | IIII 
+
+step=11, rand=5, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+.T.. | IIII 
+TT.. | IIII 
+.T.. | IIII 
+.... | IIII 
+..I. | IIII 
+T.II | IIII 
+
+step=12, rand=0, actions=&lt;Drop&gt;
+Want | Got ✗
+------------
+.... | IIII 
+IIII | IIII 
+.... | IIII 
+.... | IIII 
+.T.. | IIII 
+TTI. | IIII 
+
+step=13, rand=0, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+..I. | IIII 
+..I. | IIII 
+..I. | IIII 
+..I. | IIII 
+.T.. | IIII 
+TTI. | IIII 
+
+step=14, rand=0, actions=&lt;Right&gt;
+Want | Got ✗
+------------
+...I | IIII 
+...I | IIII 
+...I | IIII 
+...I | IIII 
+.T.. | IIII 
+TTI. | IIII 
+
+step=15, rand=5, actions=&lt;Drop&gt;
+Want | Got ✗
+------------
+.T.. | IIII 
+TTT. | IIII 
+.... | IIII 
+...I | IIII 
+...I | IIII 
+.T.I | IIII 
+
+step=16, rand=5, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+.T.. | IIII 
+.TT. | IIII 
+.T.. | IIII 
+...I | IIII 
+...I | IIII 
+.T.I | IIII 
+
+step=17, rand=5, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+.... | IIII 
+TTT. | IIII 
+.T.. | IIII 
+...I | IIII 
+...I | IIII 
+.T.I | IIII 
+
+step=18, rand=5, actions=&lt;RotateRight&gt;
+Want | Got ✗
+------------
+.T.. | IIII 
+TT.. | IIII 
+.T.. | IIII 
+...I | IIII 
+...I | IIII 
+.T.I | IIII 
+
+step=19, rand=5, actions=&lt;Right&gt;
+Want | Got ✗
+------------
+..T. | IIII 
+.TT. | IIII 
+..T. | IIII 
+...I | IIII 
+...I | IIII 
+.T.I | IIII 
+
+step=20, rand=0, actions=&lt;Drop&gt;
+Want | Got ✗
+------------
+.... | IIII 
+IIII | IIII 
+.... | IIII 
+..TI | IIII 
+.TTI | IIII 
+.TTI | IIII 
+
+
+	at app//org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
+	at app//org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
+	at app//org.scalatest.FunSuite.newAssertionFailedException(FunSuite.scala:1560)
+	at app//org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:503)
+	at app//generic.GameTestSuite.checkGame(GameTestSuite.scala:298)
+	at app//tetris.TetrisTestSuiteBase.checkGame(TetrisTestSuiteBase.scala:106)
+	at app//tetris.DropTests.$anonfun$new$1(DropTests.scala:160)
+	at app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at app//infrastructure.TestBase.$anonfun$test$1(TestBase.scala:36)
+	at app//org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at app//org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at app//org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:22)
+	at app//org.scalatest.Transformer.apply(Transformer.scala:20)
+	at app//org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)
+	at app//org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at app//org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at app//infrastructure.TestBase.org$scalatest$concurrent$TimeLimitedTests$$super$withFixture(TestBase.scala:9)
+	at app//org.scalatest.concurrent.TimeLimitedTests.$anonfun$withFixture$3(TimeLimitedTests.scala:154)
+	at app//org.scalatest.enablers.Timed$$anon$1.timeoutAfter(Timed.scala:127)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl(TimeLimits.scala:239)
+	at app//org.scalatest.concurrent.TimeLimits.failAfterImpl$(TimeLimits.scala:233)
+	at app//org.scalatest.concurrent.TimeLimits$.failAfterImpl(TimeLimits.scala:305)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture(TimeLimitedTests.scala:153)
+	at app//org.scalatest.concurrent.TimeLimitedTests.withFixture$(TimeLimitedTests.scala:150)
+	at app//infrastructure.TestBase.withFixture(TestBase.scala:9)
+	at app//org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)
+	at app//org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at app//org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)
+	at app//org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)
+	at app//org.scalatest.FunSuite.runTest(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)
+	at app//org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at app//scala.collection.immutable.List.foreach(List.scala:333)
+	at app//org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at app//org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at app//org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at app//org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)
+	at app//org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)
+	at app//org.scalatest.FunSuite.runTests(FunSuite.scala:1560)
+	at app//org.scalatest.Suite.run(Suite.scala:1124)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)
+	at app//org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)
+	at app//org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at app//org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)
+	at app//org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)
+	at app//infrastructure.TestBase.run(TestBase.scala:26)
+	at app//org.scalatest.Suite.callExecuteOnSuite$1(Suite.scala:1187)
+	at app//org.scalatest.Suite.$anonfun$runNestedSuites$1(Suite.scala:1234)
+	at app//scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1323)
+	at app//org.scalatest.Suite.runNestedSuites(Suite.scala:1232)
+	at app//org.scalatest.Suite.runNestedSuites$(Suite.scala:1166)
+	at app//org.scalatest.Suites.runNestedSuites(Suites.scala:56)
+	at app//org.scalatest.Suite.run(Suite.scala:1121)
+	at app//org.scalatest.Suite.run$(Suite.scala:1106)
+	at app//tetris.TetrisTestSuitesBase.runDirect(TetrisTestSuitesBase.scala:20)
+	at app//tetris.TetrisTestSuitesBase.runWithScoreCounter(TetrisTestSuitesBase.scala:14)
+	at app//tetris.TetrisTestSuite3_2.run(TetrisTestSuite3_2.scala:25)
+	at app//org.scalatestplus.junit.JUnitRunner.run(JUnitRunner.scala:99)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at app//org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at app//org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.18/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.18/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.18/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

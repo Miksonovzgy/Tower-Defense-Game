@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.GameOverTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-10-01T17:07:44" hostname="DESKTOP-FBIJT05" time="0.013">
+  <properties/>
+  <testcase name="testGameOver" classname="tetris.GameOverTests" time="0.005"/>
+  <testcase name="testNoEscapeGameOver" classname="tetris.GameOverTests" time="0.002"/>
+  <testcase name="testNoEscapeGameOver2" classname="tetris.GameOverTests" time="0.002"/>
+  <testcase name="testNoGameOverTightFit" classname="tetris.GameOverTests" time="0.003"/>
+  <system-out><![CDATA[CAN SPAWN?: true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
