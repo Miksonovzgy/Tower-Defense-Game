@@ -19,3 +19,6 @@ What it comprises of?
 3 different types of Enemies representing Regular Circle-o Squares; Heavier Rectangles and Devastating 4-Eyed Bosses
 4 levels of difficulty with 10 waves each
 A working menu Allowing You to choose the Difficulty level; Read the Instruction or Start the game
+
+Video Demo
+https://video.vu.nl/media/Shapes_Warfare_720.mp4/1_7bsyx0uz

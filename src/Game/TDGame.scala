@@ -27,11 +27,10 @@ class TowerDefense extends PApplet {
   private val possiblePaths = new PossiblePaths()
   private val waves : Waves = new Waves
   private val wavesList : List[Wave] = getWavesByDiff(DifficultySingleton.selectedDifficulty)
-  println(DifficultySingleton.selectedDifficulty)
 
-  var currWave = wavesList(0)
-  var bgImage : PImage = null
-  var randomMapSeed = Random.between(0,4)
+  private var currWave = wavesList.head
+  private var bgImage : PImage = null
+  private val randomMapSeed: Int = Random.between(0,4)
   var waypoints : List[Waypoint] = possiblePaths.possiblePaths(randomMapSeed)
 
 
@@ -40,18 +39,18 @@ class TowerDefense extends PApplet {
   private val bossSpeed = 1
   private var waveNum : String = currWave.numWave.toString
 
-  var totalRegulars = currWave.numRegs
-  var totalHeavies = currWave.numHeavies
-  var totalBosses = currWave.numBosses
-  var enemiesLeftToSpawn = totalHeavies + totalRegulars + totalBosses
-  val rateInSeconds = 0.5
-  var lastSpawnTime = 0L
-  var enemiesRatio = if(totalHeavies > 0) (totalRegulars max totalHeavies) / (totalRegulars min totalHeavies) else totalRegulars
-  val moreCommonType: Enemy = if(totalRegulars>totalHeavies) RegularEnemy(1,1,east(),1) else HeavyEnemy(1,1,east(),1)
-  val lessCommonType: Enemy = moreCommonType match {case r : RegularEnemy => HeavyEnemy(1,1,east(),1) case h : HeavyEnemy => RegularEnemy(1,1,east(),1)}
-  var spawningQueue : Queue[Enemy] = prepareSpawningQueue(moreCommonType, lessCommonType)
-  var f : PFont = null
+  private var totalRegulars = currWave.numRegs
+  private var totalHeavies = currWave.numHeavies
+  private var totalBosses = currWave.numBosses
+  private var enemiesLeftToSpawn = totalHeavies + totalRegulars + totalBosses
+  private val rateInSeconds = 0.5
+  private var lastSpawnTime = 0L
+  private var enemiesRatio = getEnemyRatio(totalHeavies, totalRegulars)
+  private val moreCommonType: Enemy = getMoreCommonType(totalHeavies, totalRegulars)
+  private val lessCommonType: Enemy = getLessCommonType(moreCommonType)
+  private var spawningQueue : Queue[Enemy] = prepareSpawningQueue(moreCommonType, lessCommonType)
 
+  var f : PFont = null
   val minim = new Minim(this)
   var music : AudioPlayer = null
   var shot : AudioSample = null
@@ -81,41 +80,25 @@ class TowerDefense extends PApplet {
 
   override def draw(): Unit = {
     if(!isGameOver) {
-      background(bgImage) // Clear the background
+      background(bgImage)
       fill(0)
       drawPlayer(player)
 
       if (enemies.isEmpty && spawningQueue.nonEmpty) {
-        val (firstEnemy, leftoverQueue) = spawningQueue.dequeue
-        spawningQueue = leftoverQueue
-        enemies = enemies.appended(firstEnemy)
-        lastSpawnTime = frameCount
+          spawnFirstEnemy()
       }
       if(spawningQueue.nonEmpty) enemies = spawnEnemy(spawningQueue)
-      fill(250, 0, 0)
-      enemies.foreach(drawEnemy)
-      enemies = enemies.map(en => en.move(en.dir, waypoints))
 
-      bullets.foreach(drawBullet)
-      bullets = bullets.map(bul => bul.update())
-      bullets = enemiesHitDetect()
+      drawAndMoveEnemies()
+
+      drawMoveAndHitDetectBullets()
 
       drawCrosshair()
-      textFont(f, 25)
-      fill(255)
-      text("Wave Number: " + waveNum, 20, 460)
+
+      drawWaveText()
 
       if(enemies.isEmpty && currWave.numWave != 10) {
-        println("Gets new wave of num: "+ currWave.numWave+1)
-        getNewWave(currWave.numWave)
-        enemiesRatio = if(totalHeavies > 0) (totalRegulars max totalHeavies) / (totalRegulars min totalHeavies) else totalRegulars
-        val moreCommonType: Enemy = if (totalRegulars > totalHeavies) RegularEnemy(1, 1, east(), 1) else HeavyEnemy(1, 1, east(), 1)
-        val lessCommonType: Enemy = moreCommonType match {
-          case r: RegularEnemy => HeavyEnemy(1, 1, east(), 1)
-          case h: HeavyEnemy => RegularEnemy(1, 1, east(), 1)
-        }
-        spawningQueue = prepareSpawningQueue(moreCommonType, lessCommonType)
-        newWave.trigger()
+        handleNewWave()
       }
     }
     else{
@@ -131,10 +114,8 @@ class TowerDefense extends PApplet {
     val healthBarWidth = boss.health * 16
     textFont(f, 20)
     text("Why do I hear Boss music?", 200,30)
-    rect(120, 40, healthBarWidth, 20) // Adjust the position and dimensions as needed
+    rect(120, 40, healthBarWidth, 20)
   }
-
-
   private def spawnEnemy(enQueue : Queue[Enemy]) : List[Enemy] = {
     if (frameCount - lastSpawnTime >= rateInSeconds * frameRate) {
       val (newEnemy, leftoverQueue) = enQueue.dequeue
@@ -144,9 +125,7 @@ class TowerDefense extends PApplet {
     }
     enemies
   }
-
-
-  def prepareSpawningQueue(moreCommonType : Enemy, lessCommonType : Enemy) : Queue[Enemy]  = {
+  private def prepareSpawningQueue(moreCommonType : Enemy, lessCommonType : Enemy) : Queue[Enemy]  = {
     var moreCommonSpawnWindow = enemiesRatio
     var lessCommonCount = (totalRegulars min totalHeavies)
 
@@ -183,12 +162,50 @@ class TowerDefense extends PApplet {
     }
     spawningQueue
   }
+  private def getLessCommonType(moreCommonType : Enemy) : Enemy = {
+    moreCommonType match{
+    case r : RegularEnemy => HeavyEnemy(1,1,east(),1)
+    case h : HeavyEnemy => RegularEnemy(1,1,east(),1)
+    }
+  }
+  private def getMoreCommonType(totalHeavies : Int, totalRegs : Int) : Enemy = {
+    if (totalRegs > totalHeavies) RegularEnemy(1, 1, east(), 1)
+    else HeavyEnemy(1, 1, east(), 1)
 
+  }
+  private def getEnemyRatio(totalHeavies : Int, totalRegs : Int) : Int = {
+    if(totalHeavies > 0) (totalRegulars max totalHeavies) / (totalRegulars min totalHeavies)
+    else totalRegulars
+  }
+  private def spawnFirstEnemy() : Unit = {
+    val (firstEnemy, leftoverQueue) = spawningQueue.dequeue
+    spawningQueue = leftoverQueue
+    enemies = enemies.appended(firstEnemy)
+    lastSpawnTime = frameCount
+  }
+ private def handleNewWave(): Unit = {
+   getNewWave(currWave.numWave)
+   enemiesRatio = getEnemyRatio(totalHeavies, totalRegulars)
+   val moreCommonType: Enemy = getMoreCommonType(totalHeavies, totalRegulars)
+   val lessCommonType: Enemy = getLessCommonType(moreCommonType)
+   spawningQueue = prepareSpawningQueue(moreCommonType, lessCommonType)
+   newWave.trigger()
+ }
 
+  private def drawAndMoveEnemies() : Unit = {
+    fill(250, 0, 0)
+    enemies.foreach(drawEnemy)
+    enemies = enemies.map(en => en.move(en.dir, waypoints))
+  }
+
+  private def drawMoveAndHitDetectBullets() : Unit = {
+    bullets.foreach(drawBullet)
+    bullets = bullets.map(bul => bul.update())
+    bullets = enemiesHitDetect()
+  }
   private def drawPlayer(Player : Player) : Unit = {
     rect(Player.x, Player.y, Player.size, Player.size,10)
   }
-
 
   private def drawCrosshair() : Unit = {
     val mx = mouseX
@@ -200,6 +217,11 @@ class TowerDefense extends PApplet {
     rect(mx+2, my+5,4,8)
   }
 
+  private def drawWaveText() : Unit = {
+    textFont(f, 25)
+    fill(255)
+    text("Wave Number: " + waveNum, 20, 460)
+  }
   private def drawBullet(bullet : Bullet) : Unit = {
     val color = Color.Purple
     fill(color.red, color.green, color.blue)
@@ -256,9 +278,8 @@ class TowerDefense extends PApplet {
   private def drawHeavyEnemy(e: HeavyEnemy): Unit = {
     val col = e.color
     fill(col.red, col.green, col.blue)
-    rect(e.x, e.y, 25, 25) // Slightly larger and bulkier
-    // Add armor plating
-    fill(100, 100, 100) // Gray color for armor
+    rect(e.x, e.y, 25, 25)
+    fill(100, 100, 100)
     rect(e.x + 5, e.y + 5, 15, 15)
   }
 
@@ -268,6 +289,7 @@ class TowerDefense extends PApplet {
     rect(boss.x, boss.y, 80, 80)
 
     fill(255, 0, 0)
+
     // Weak Spot 1: Left eye
     circle(boss.x + 20, boss.y + 35, 15)
 
@@ -279,7 +301,6 @@ class TowerDefense extends PApplet {
 
     // Weak Spot 4: Back
     circle(boss.x + 40, boss.y + 15, 25)
-
 
     //Horns
     fill(100, 100, 100)

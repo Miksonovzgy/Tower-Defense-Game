@@ -8,18 +8,18 @@ object DifficultySingleton {
   var selectedDifficulty: Difficulty = LevelDescription.easy()
 }
 class Menu extends PApplet {
-  var menuButtons: List[Button] = List.empty
-  var optionsButtons : List[Button] = List.empty
-  var instructionsButtons : List[Button] = List.empty
-  var instructionsShowed = false
-  var optionsShowed = false
-  var skul : PImage = null
+  private var menuButtons: List[Button] = List.empty
+  private var optionsButtons : List[Button] = List.empty
+  private var instructionsButtons : List[Button] = List.empty
+  private var instructionsShowed = false
+  private var optionsShowed = false
+  private var skul : PImage = null
   val WIDTH = 640
   val HEIGHT = 480
-  val backButton = new Button("Back", WIDTH / 2, 400)
+  private val backButton = new Button("Back", WIDTH / 2, 400)
   val minim = new Minim(this)
   var music : AudioPlayer = null
-  var menuHit : AudioSample = null
+  private var menuHit : AudioSample = null
 
 
 
@@ -67,7 +67,6 @@ class Menu extends PApplet {
   }
 
   override def draw(): Unit = {
-   // music.loop()
     if(instructionsShowed) {
       background(0)
       textAlign(PConstants.CENTER, PConstants.CENTER)
@@ -121,7 +120,7 @@ class Menu extends PApplet {
     }
   }
 
-  def displayButtons(buttons : List[Button]) : Unit = {
+  private def displayButtons(buttons : List[Button]) : Unit = {
     buttons.foreach(button => {
       drawButton(button)
       if (button.isHovered(mouseX, mouseY)) {

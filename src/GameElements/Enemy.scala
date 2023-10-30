@@ -15,7 +15,6 @@ sealed abstract class Enemy(val x : Int , val y : Int,val  dir : Direction,val s
 
   def move(dir: Direction, waypoints: List[Waypoint]): Enemy
   def changeHealthCol: Enemy
-
   def hasCollided(bullets: List[Bullet]): Option[Bullet]
 
   def clamp(value: Float, min: Float, max: Float): Float = {
@@ -34,7 +33,7 @@ case class RegularEnemy(override val x : Int,
                         override val color: Color = Color.DarkGreen,
                         override val health : Int = 3) extends Enemy(x, y, dir,speed, color, health)
 {
-  def move(dir: Direction, waypoints: List[Waypoint]): RegularEnemy = {
+  override def move(dir: Direction, waypoints: List[Waypoint]): RegularEnemy = {
     var newDir = dir
     if (waypoints.exists(w => w.isInProximity(this.x, this.y, this.speed))) {
       newDir = waypoints.collect { case w if w.isInProximity(this.x, this.y, this.speed) => w.dirAfter }.head
@@ -61,7 +60,7 @@ case class RegularEnemy(override val x : Int,
     }
   }
 
-  def changeHealthCol : RegularEnemy = {
+  override def changeHealthCol : RegularEnemy = {
     RegularEnemy(x, y, dir, speed, healthToColors(health - 1), health - 1)
   }
 }
@@ -74,7 +73,7 @@ case class HeavyEnemy(override val x : Int,
                       override val speed : Int,
                       override val color: Color = Color.Black,
                       override val health : Int = 7) extends Enemy(x, y, dir, speed, color, health) {
-  def move(dir: Direction, waypoints: List[Waypoint]): HeavyEnemy = {
+  override def move(dir: Direction, waypoints: List[Waypoint]): HeavyEnemy = {
     var newDir = dir
     if (waypoints.exists(w => w.isInProximity(this.x, this.y, this.speed))) {
       newDir = waypoints.collect { case w if w.isInProximity(this.x, this.y, this.speed) => w.dirAfter }.head
@@ -88,7 +87,7 @@ case class HeavyEnemy(override val x : Int,
 
   }
 
-  def changeHealthCol: HeavyEnemy = {
+  override def changeHealthCol: HeavyEnemy = {
     HeavyEnemy(x, y, dir, speed, healthToColors(health - 1), health - 1)
   }
 
@@ -115,7 +114,7 @@ case class Boss(override val x : Int,
                       override val speed : Int,
                       override val color: Color = Color.Black,
                       override val health : Int = 25) extends Enemy(x, y, dir, speed, color, health) {
-  def move(dir: Direction, waypoints: List[Waypoint]): Boss = {
+  override def move(dir: Direction, waypoints: List[Waypoint]): Boss = {
     var newDir = dir
     if (waypoints.exists(w => w.isInProximity(this.x, this.y, this.speed))) {
       newDir = waypoints.collect { case w if w.isInProximity(this.x, this.y, this.speed) => w.dirAfter }.head
@@ -129,12 +128,9 @@ case class Boss(override val x : Int,
 
   }
 
-  def changeHealthCol: Boss = {
+  override def changeHealthCol: Boss = {
     Boss(x, y, dir, speed, Color.Black, health - 1)
   }
-
-
-  //override def hasCollided(bullets: List[Bullet]): Option[Bullet] =
 
   override def hasCollided(bullets: List[Bullet]): Option[Bullet] = {
     bullets.find { bullet =>
@@ -145,7 +141,6 @@ case class Boss(override val x : Int,
       val leftEyeX = x + 20
       val leftEyeY = y + 35
       val leftEyeRadius = 15
-
 
       val rightEyeX = x + 60
       val rightEyeY = y + 35
